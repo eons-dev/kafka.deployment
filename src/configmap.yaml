@@ -3,7 +3,7 @@ kind: ConfigMap
 metadata:
   name: {name}-config
 data:
-  kibana.yml: |
+  kafka.yml: |
     server.name: '{name}'
 {re.sub('^', '    ', configure, flags=re.M)}
     

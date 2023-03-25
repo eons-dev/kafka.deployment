@@ -23,12 +23,4 @@ spec:
         - containerPort: 9092
           name: kafka
         env:
-        - name: KFK_PATH_CONF
-          value: /etc/kafka
-        volumeMounts:
-        - name: config
-          mountPath: /etc/kafka
-      volumes:
-      - name: config
-        configMap: 
-          name: {name}-config
+        
